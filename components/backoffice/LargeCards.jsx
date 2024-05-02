@@ -39,7 +39,7 @@ export default function LargeCards({ sales }) {
       color: "bg-green-600",
     },
     {
-      period: "Ventas de esta semana",
+      period: "Ventas de la Semana",
       sales: thisWeekSales,
       color: "bg-blue-600",
     },

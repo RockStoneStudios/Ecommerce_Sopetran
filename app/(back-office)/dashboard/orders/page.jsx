@@ -15,7 +15,7 @@ export default async function page() {
   console.log(userId);
 
   if (orders.length === 0 || !orders) {
-    return <p>No Orders Yet</p>;
+    return <p>Aún no hay pedidos</p>;
   }
   // Filter By User Id
   const userOrders = orders.filter((order) => order.userId === userId);
@@ -26,10 +26,10 @@ export default async function page() {
         <div className="max-w-6xl mx-auto">
           <div>
             <h1 className="text-2xl font-bold text-gray-900 sm:text-3xl">
-              Your Orders
+              Tus Ordenes
             </h1>
             <p className="mt-2 text-sm font-normal text-gray-600">
-              Check the status of recent and old orders & discover more products
+            Verifique el estado de pedidos recientes y antiguos y descubra más productos
             </p>
           </div>
 
