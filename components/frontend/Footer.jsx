@@ -7,8 +7,9 @@ const Footer = () => {
             <img className="w-auto h-9" src="/limiLogo.webp" alt="" />
 
             <p className="text-base leading-relaxed text-gray-600 mt-7">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
+            Una plataforma de comercio electrónico localizada en Sopetrán, que ofrece una variedad de productos y
+             servicios para la comunidad,
+             facilitando la compra y venta dentro del municipio .
             </p>
 
             <ul className="flex items-center space-x-3 mt-9">
@@ -90,7 +91,7 @@ const Footer = () => {
 
           <div>
             <p className="text-sm font-semibold tracking-widest text-gray-400 uppercase">
-              Company
+              Compañia
             </p>
 
             <ul className="mt-6 space-y-4">
@@ -101,7 +102,7 @@ const Footer = () => {
                   className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   {" "}
-                  About{" "}
+                  Nosotros{" "}
                 </a>
               </li>
 
@@ -112,7 +113,7 @@ const Footer = () => {
                   className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   {" "}
-                  Features{" "}
+                  Caracteristicas{" "}
                 </a>
               </li>
 
@@ -123,7 +124,7 @@ const Footer = () => {
                   className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   {" "}
-                  Works{" "}
+                  Trabajo{" "}
                 </a>
               </li>
 
@@ -134,7 +135,7 @@ const Footer = () => {
                   className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   {" "}
-                  Career{" "}
+                  Carrera{" "}
                 </a>
               </li>
             </ul>
@@ -142,7 +143,7 @@ const Footer = () => {
 
           <div>
             <p className="text-sm font-semibold tracking-widest text-gray-400 uppercase">
-              Help
+              Ayuda
             </p>
 
             <ul className="mt-6 space-y-4">
@@ -153,7 +154,7 @@ const Footer = () => {
                   className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   {" "}
-                  Customer Support{" "}
+                  Atención al cliente{" "}
                 </a>
               </li>
 
@@ -164,7 +165,7 @@ const Footer = () => {
                   className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   {" "}
-                  Delivery Details{" "}
+                  Detalles de la entrega{" "}
                 </a>
               </li>
 
@@ -175,7 +176,7 @@ const Footer = () => {
                   className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   {" "}
-                  Terms & Conditions{" "}
+                  Terms & Condiciones{" "}
                 </a>
               </li>
 
@@ -186,7 +187,7 @@ const Footer = () => {
                   className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   {" "}
-                  Privacy Policy{" "}
+                  Politica de Privacidad{" "}
                 </a>
               </li>
             </ul>
@@ -194,7 +195,7 @@ const Footer = () => {
 
           <div className="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
             <p className="text-sm font-semibold tracking-widest text-gray-400 uppercase">
-              Subscribe to newsletter
+            Suscríbete al boletín
             </p>
 
             <form action="#" method="POST" className="mt-6">
@@ -206,7 +207,7 @@ const Footer = () => {
                   type="email"
                   name="email"
                   id="email"
-                  placeholder="Enter your email"
+                  placeholder="Ingresa tu Email"
                   className="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
                 />
               </div>
@@ -215,7 +216,7 @@ const Footer = () => {
                 type="submit"
                 className="inline-flex items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:bg-blue-700"
               >
-                Subscribe
+                Suscribete
               </button>
             </form>
           </div>
@@ -224,7 +225,7 @@ const Footer = () => {
         <hr className="mt-16 mb-10 border-gray-200" />
 
         <p className="text-sm text-center text-gray-600">
-          © Copyright 2021, All Rights Reserved by Postcraft
+          © Copyright 2024, Todos los derechos reservados por RockStone
         </p>
       </div>
     </section>

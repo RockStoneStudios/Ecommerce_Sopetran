@@ -26,7 +26,7 @@ export default function HelpModal() {
       </button>
       <Modal show={openModal} onClose={() => setOpenModal(false)}>
         <Modal.Header>
-          Need Help with Shopping, Talk to our Help Desk
+        Necesita ayuda con las compras, hable con nuestro servicio de asistencia
         </Modal.Header>
         <Modal.Body>
           <div className="grid grid-cols-2 gap-6">
@@ -37,7 +37,7 @@ export default function HelpModal() {
               <div className="flex items-center w-10 h-10 bg-lime-100 justify-center rounded-full">
                 <Headphones className="w-6 h-6 text-lime-800" />
               </div>
-              <span>Call: 07880994646</span>
+              <span>Telofono: 3206209817</span>
             </Link>
             <Link
               href="/track"
@@ -46,7 +46,7 @@ export default function HelpModal() {
               <div className="flex items-center w-10 h-10 bg-lime-100 justify-center rounded-full">
                 <Truck className="w-6 h-6 text-lime-800" />
               </div>
-              <span>Track your Order</span>
+              <span>Rastrea tu orden</span>
             </Link>
             <Link
               href="tel:2567833663"
@@ -55,7 +55,7 @@ export default function HelpModal() {
               <div className="flex items-center w-10 h-10 bg-lime-100 justify-center rounded-full">
                 <CornerDownLeft className="w-6 h-6 text-lime-800" />
               </div>
-              <span>Returns and Refunds</span>
+              <span>Devoluciones y reembolsos</span>
             </Link>
             <Link
               href="tel:2567833663"
@@ -64,7 +64,7 @@ export default function HelpModal() {
               <div className="flex items-center w-10 h-10 bg-lime-100 justify-center rounded-full">
                 <MessageSquare className="w-6 h-6 text-lime-800" />
               </div>
-              <span>Chat with Us</span>
+              <span>Chatea con Nosotros</span>
             </Link>
           </div>
         </Modal.Body>

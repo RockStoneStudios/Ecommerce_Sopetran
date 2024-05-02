@@ -37,7 +37,7 @@ export default function RegisterForm({ role = "USER" }) {
       if (response.ok) {
         console.log(responseData);
         setLoading(false);
-        toast.success("User Created Successfully");
+        toast.success("Usuario creado Exitosamente");
         reset();
         //if role =user => home
         //if role= farmer => onboarding
@@ -51,18 +51,18 @@ export default function RegisterForm({ role = "USER" }) {
       } else {
         setLoading(false);
         if (response.status === 409) {
-          setEmailErr("User with this Email already exists");
-          toast.error("User with this Email already exists");
+          setEmailErr("El usuario con este correo electrónico ya existe");
+          toast.error("El usuario con este correo electrónico ya existe");
         } else {
           // Handle other errors
           console.error("Server Error:", responseData.error);
-          toast.error("Oops Something Went wrong");
+          toast.error("Ooops! Algo salió mal");
         }
       }
     } catch (error) {
       setLoading(false);
       console.error("Network Error:", error);
-      toast.error("Something Went wrong, Please Try Again");
+      toast.error("Algo salió mal. Por favor, vuelva a intentarlo");
     }
   }
 
@@ -78,7 +78,7 @@ export default function RegisterForm({ role = "USER" }) {
         className="sm:col-span-2 mb-3"
       />
       <TextInput
-        label="Your Full Name"
+        label="Nombres Completos"
         name="name"
         register={register}
         errors={errors}
@@ -86,7 +86,7 @@ export default function RegisterForm({ role = "USER" }) {
         className="sm:col-span-2 mb-3"
       />
       <TextInput
-        label="Email Address"
+        label="Direccion Email"
         name="email"
         register={register}
         errors={errors}
@@ -108,12 +108,12 @@ export default function RegisterForm({ role = "USER" }) {
       <SubmitButton
         isLoading={loading}
         buttonTitle="Register"
-        loadingButtonTitle="Creating Please wait..."
+        loadingButtonTitle="Creando Por favor espera..."
       />
 
       <div className="flex gap-2 justify-between">
         <p className="text-[0.75rem] font-light text-gray-500 dark:text-gray-400 py-4">
-          Already have an account?{" "}
+        ¿Ya tienes una cuenta?{" "}
           <Link
             href="/login"
             className="font-medium text-purple-600 hover:underline dark:text-purple-500"
@@ -123,22 +123,22 @@ export default function RegisterForm({ role = "USER" }) {
         </p>
         {role === "USER" ? (
           <p className="text-[0.75rem] font-light text-gray-500 dark:text-gray-400 py-4">
-            Are you a Farmer ?{" "}
+            ¿Eres agricultora?{" "}
             <Link
               href="/farmer-pricing"
               className="font-medium text-purple-600 hover:underline dark:text-purple-500"
             >
-              Register here
+              Registrate aqui
             </Link>
           </p>
         ) : (
           <p className="text-[0.75rem] font-light text-gray-500 dark:text-gray-400 py-4">
-            Are you a User ?{" "}
+            Eres un Usuario?{" "}
             <Link
               href="/register"
               className="font-medium text-purple-600 hover:underline dark:text-purple-500"
             >
-              Register here
+              Registrate aqui
             </Link>
           </p>
         )}

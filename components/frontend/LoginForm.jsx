@@ -53,7 +53,7 @@ export default function LoginForm() {
           htmlFor="email"
           className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
         >
-          Your email
+          Tu email
         </label>
         <input
           {...register("email", { required: true })}
@@ -66,7 +66,7 @@ export default function LoginForm() {
         />
         {errors.email && (
           <small className="text-red-600 text-sm ">
-            This field is required
+             Este campo es requerido
           </small>
         )}
       </div>
@@ -88,7 +88,7 @@ export default function LoginForm() {
         />
         {errors.password && (
           <small className="text-red-600 text-sm ">
-            This field is required
+            Este campo es requerido
           </small>
         )}
       </div>
@@ -97,7 +97,7 @@ export default function LoginForm() {
           href="/forgot-password"
           className="shrink-0 font-medium text-blue-600 hover:underline dark:text-blue-500"
         >
-          Forgot Password
+          Olvido su Contraseña?
         </Link>
         {loading ? (
           <button
@@ -122,7 +122,7 @@ export default function LoginForm() {
                 fill="currentColor"
               />
             </svg>
-            Signing you in please wait...
+            Iniciando sesión por favor espere...
           </button>
         ) : (
           <button
@@ -135,12 +135,12 @@ export default function LoginForm() {
       </div>
 
       <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-        Already have an account?{" "}
+      ¿Ya tienes una cuenta?{" "}
         <Link
           href="/register"
           className="font-medium text-blue-600 hover:underline dark:text-blue-500"
         >
-          Sign Up
+          Registrate
         </Link>
       </p>
     </form>

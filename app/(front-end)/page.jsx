@@ -29,7 +29,7 @@ export default async function Home() {
       })}
 
       <CommunityTrainings
-        title="Featured Trainings"
+        title="Entrenamientos destacados"
         trainings={trainings.slice(0, 3)}
       />
     </div>

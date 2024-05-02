@@ -13,7 +13,7 @@ export default async function SidebarCategories() {
   return (
     <div className="sm:col-span-3 sm:block bg-white border border-gray-300 rounded-lg  dark:bg-gray-700 dark:border-gray-700 text-slate-800 overflow-hidden hidden">
       <h2 className="bg-slate-100 dark:bg-gray-800 py-3 px-6 font-semibold border-b border-gray-300 dark:border-gray-600 text-slate-800 dark:text-slate-100">
-        Shop By Category ({categories.length})
+      Comprar por categoría ({categories.length})
       </h2>
       <div className="py-3 px-6 h-[300px] overflow-y-auto flex flex-col gap-2">
         {categories.length > 0 &&
