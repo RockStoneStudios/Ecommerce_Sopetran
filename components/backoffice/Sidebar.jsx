@@ -46,79 +46,79 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
   const pathname = usePathname();
   let sidebarLinks = [
     {
-      title: "Customers",
+      title: "Clientes",
       icon: Users2,
       href: "/dashboard/customers",
     },
     {
-      title: "Markets",
+      title: "Mercados",
       icon: Warehouse,
       href: "/dashboard/markets",
     },
     {
-      title: "Farmers",
+      title: "Agricultores",
       icon: UserSquare2,
       href: "/dashboard/farmers",
     },
     {
-      title: "Orders",
+      title: "Ordenes",
       icon: Truck,
       href: "/dashboard/orders",
     },
     {
-      title: "Sales",
+      title: "Ventas",
       icon: Truck,
       href: "/dashboard/sales",
     },
     {
-      title: "Our Staff",
+      title: "Nuestro personal",
       icon: User,
       href: "/dashboard/staff",
     },
     {
-      title: "Limi Community",
+      title: "Sope Communidad",
       icon: Building2,
       href: "/dashboard/community",
     },
     {
-      title: "Wallet",
+      title: "Billetera",
       icon: CircleDollarSign,
       href: "/dashboard/wallet",
     },
     {
-      title: "Farmer Support",
+      title: "Apoyo al agricultor",
       icon: HeartHandshake,
       href: "/dashboard/farmer-support",
     },
     {
-      title: "Settings",
+      title: "Ajustes",
       icon: LayoutGrid,
       href: "/dashboard/settings",
     },
     {
-      title: "Online Store",
+      title: "Tienda en línea",
       icon: ExternalLink,
       href: "/",
     },
   ];
   let catalogueLinks = [
     {
-      title: "Products",
+      title: "Productos",
       icon: Boxes,
       href: "/dashboard/products",
     },
     {
-      title: "Categories",
+      title: "Categorias",
       icon: LayoutList,
       href: "/dashboard/categories",
     },
     {
-      title: "Coupons",
+      title: "Cupones",
       icon: ScanSearch,
       href: "/dashboard/coupons",
     },
     {
-      title: "store Banners",
+      title: "Pancartas de Tienda",
       icon: MonitorPlay,
       href: "/dashboard/banners",
     },
@@ -126,39 +126,39 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
   if (role === "FARMER") {
     sidebarLinks = [
       {
-        title: "Sales",
+        title: "Ventas",
         icon: Truck,
         href: "/dashboard/sales",
       },
       {
-        title: "Wallet",
+        title: "Billetera",
         icon: CircleDollarSign,
         href: "/dashboard/wallet",
       },
       {
-        title: "Farmer Support",
+        title: "Soporte Agricultor",
         icon: HeartHandshake,
         href: "/dashboard/farmer-support",
       },
       {
-        title: "Settings",
+        title: "Ajustes",
         icon: LayoutGrid,
         href: "/dashboard/settings",
       },
       {
-        title: "Online Store",
+        title: "Tienda en línea",
         icon: ExternalLink,
         href: "/",
       },
     ];
     catalogueLinks = [
       {
-        title: "Products",
+        title: "Productos",
         icon: Boxes,
         href: "/dashboard/products",
       },
       {
-        title: "Coupons",
+        title: "Cupones",
         icon: ScanSearch,
         href: "/dashboard/coupons",
       },
@@ -167,17 +167,17 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
   if (role === "USER") {
     sidebarLinks = [
       {
-        title: "My Orders",
+        title: "Mis Ordenes",
         icon: Truck,
         href: "/dashboard/orders",
       },
       {
-        title: "Profile",
+        title: "Perfil",
         icon: Truck,
         href: "/dashboard/profile",
       },
       {
-        title: "Online Store",
+        title: "Tienda en linea",
         icon: ExternalLink,
         href: "/",
       },
@@ -229,7 +229,7 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
               <button className="flex items-center space-x-6  py-2 ">
                 <div className="flex items-center space-x-3">
                   <Slack />
-                  <span>Catalogue</span>
+                  <span>Catalogo</span>
                 </div>
                 {openMenu ? <ChevronDown /> : <ChevronRight />}
               </button>

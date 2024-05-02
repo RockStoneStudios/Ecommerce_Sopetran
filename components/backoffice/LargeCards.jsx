@@ -34,22 +34,22 @@ export default function LargeCards({ sales }) {
     sales.reduce((acc, item) => acc + item.total, 0).toFixed(2) ?? 0;
   const orderStats = [
     {
-      period: "Today sales",
+      period: "Ventas de hoy",
       sales: todaySales,
       color: "bg-green-600",
     },
     {
-      period: "This week Sales",
+      period: "Ventas de esta semana",
       sales: thisWeekSales,
       color: "bg-blue-600",
     },
     {
-      period: "This Month",
+      period: "Este Mes",
       sales: thisMonthSales,
       color: "bg-orange-600",
     },
     {
-      period: "All-Time Sales",
+      period: "Ventas total",
       sales: totalSales,
       color: "bg-purple-600",
     },

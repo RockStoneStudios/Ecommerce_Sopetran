@@ -24,7 +24,7 @@ export default async function page() {
   }
   return (
     <div>
-      <Heading title="Dashboard Overview" />
+      <Heading title="Panel Administrador" />
       {/* Large Cards */}
       <LargeCards sales={sales} />
       {/* Small cards */}
