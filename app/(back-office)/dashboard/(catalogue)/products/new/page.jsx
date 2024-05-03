@@ -27,7 +27,7 @@ export default async function NewProduct() {
   });
   return (
     <div>
-      <FormHeader title="New Product" />
+      <FormHeader title="Producto Nuevo" />
       <NewProductForm categories={categories} farmers={farmers} />
     </div>
   );

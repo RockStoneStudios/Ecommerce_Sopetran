@@ -8,21 +8,21 @@ export default function OverviewCards({ sales, products }) {
   const totalSales = sales.reduce((acc, item) => acc + item.total, 0);
   const analytics = [
     {
-      title: "Products",
+      title: "Productos",
       count: productsCount,
       unit: "",
       link: "/dashboard/products",
       icon: "",
     },
     {
-      title: "Sales",
+      title: "Ventas",
       count: salesCount,
       unit: "",
       link: "/dashboard/sales",
       icon: "",
     },
     {
-      title: "Total Revenue",
+      title: "INGRESOS TOTALES",
       count: totalSales,
       unit: "",
       link: "/dashboard/sales",
