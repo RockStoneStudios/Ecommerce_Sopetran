@@ -60,7 +60,7 @@ export default function BannerForm({ updateData = {} }) {
     >
       <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
         <TextInput
-          label="Banner Title"
+          label="Banner Titulo"
           name="title"
           register={register}
           errors={errors}
@@ -80,7 +80,7 @@ export default function BannerForm({ updateData = {} }) {
           label="Banner Image"
         />
         <ToggleInput
-          label="Publish your Banner"
+          label="Publicar tu Banner"
           name="isActive"
           trueTitle="Active"
           falseTitle="Draft"
@@ -90,10 +90,10 @@ export default function BannerForm({ updateData = {} }) {
 
       <SubmitButton
         isLoading={loading}
-        buttonTitle={id ? "Update Banner" : "Create Banner"}
+        buttonTitle={id ? "Actualizar Banner" : "Crear Banner"}
         loadingButtonTitle={`${
-          id ? "Updating" : "Creating"
-        } Banner please wait...`}
+          id ? "Actualizando" : "Creando"
+        } Banner espere ...`}
       />
     </form>
   );

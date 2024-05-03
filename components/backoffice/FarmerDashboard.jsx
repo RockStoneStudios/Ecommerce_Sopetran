@@ -15,7 +15,7 @@ export default async function FarmerDashboard() {
   const sales = await getData("sales");
   const salesById = sales.filter((sale) => sale.vendorId === id);
   const products = await getData("products");
-  const productsById = products.filter((product) => product.productId === id);
+  const productsById = products.filter((product) => product.userId === id);
   if (!status) {
     return (
       <div className="max-w-2xl mx-auto min-h-screen mt-8">
@@ -27,11 +27,11 @@ export default async function FarmerDashboard() {
           <div className="flex items-center">
             <Info className="flex-shrink-0 w-4 h-4 me-2" />
             <span className="sr-only">Info</span>
-            <h3 className="text-lg font-medium">Account Under Review</h3>
+            <h3 className="text-lg font-medium">Cuenta en revisión</h3>
           </div>
           <div className="mt-2 mb-4 text-sm">
-            Your account details are currently under review. Please note that it
-            may take 24-48 hours for approval. Thank you for your patience.
+            Los detalles de su cuenta se encuentran actualmente bajo revisión. Tenga en cuenta que
+              La aprobación puede tardar entre 24 y 48 horas. Gracias por su paciencia.
           </div>
         </div>
       </div>

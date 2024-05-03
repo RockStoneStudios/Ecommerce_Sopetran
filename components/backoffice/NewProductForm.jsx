@@ -93,7 +93,7 @@ export default function NewProductForm({
     >
       <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
         <TextInput
-          label="Product Title"
+          label="Titulo de Producto"
           name="title"
           register={register}
           errors={errors}

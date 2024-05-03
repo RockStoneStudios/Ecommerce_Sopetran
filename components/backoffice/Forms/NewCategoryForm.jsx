@@ -91,7 +91,7 @@ export default function NewCategoryForm({ updateData = {} }) {
           label="Category Image"
         />
         <ToggleInput
-          label="Publish your Category"
+          label="Publicar tu Categoria"
           name="isActive"
           trueTitle="Active"
           falseTitle="Draft"
@@ -101,10 +101,10 @@ export default function NewCategoryForm({ updateData = {} }) {
 
       <SubmitButton
         isLoading={loading}
-        buttonTitle={id ? "Update Category" : "Create Category"}
+        buttonTitle={id ? "Actualizar Categoria" : "Crear Categoria"}
         loadingButtonTitle={`${
-          id ? "Updating" : "Creating"
-        } Category please wait...`}
+          id ? "Actualizando" : "Creando"
+        } Categoria espere ...`}
       />
     </form>
   );
