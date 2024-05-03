@@ -66,13 +66,13 @@ export default function WeeklySalesChart() {
   };
   const tabs = [
     {
-      title: "Sales",
+      title: "Ventas",
       type: "sales",
       data: {
         labels,
         datasets: [
           {
-            label: "Sales",
+            label: "Ventas",
             data: labels.map(() =>
               faker.datatype.number({ min: -1000, max: 1000 })
             ),
@@ -83,13 +83,13 @@ export default function WeeklySalesChart() {
       },
     },
     {
-      title: "Orders",
+      title: "Ordenes",
       type: "orders",
       data: {
         labels,
         datasets: [
           {
-            label: "Orders",
+            label: "Ordenes",
             data: labels.map(() =>
               faker.datatype.number({ min: -1000, max: 1000 })
             ),
@@ -104,7 +104,7 @@ export default function WeeklySalesChart() {
   return (
     <div className="dark:bg-slate-700 bg-slate-50 p-8 rounded-lg shadow-xl">
       <h2 className="text-xl font-bold mb-4 text-slate-800 dark:text-slate-50">
-        Weekly Sales
+      Ventas Semanales
       </h2>
       <div className="p-4">
         {/* Tabs */}

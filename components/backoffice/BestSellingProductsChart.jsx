@@ -30,7 +30,7 @@ export default function BestSellingProductsChart() {
   return (
     <div className="dark:bg-slate-700 bg-slate-50 p-8 rounded-lg shadow-xl">
       <h2 className="text-xl font-bold mb-4 text-slate-800 dark:text-slate-50">
-        Best Selling Charts
+      Gráficos Más vendidos
       </h2>
       {/* Chart */}
       <div className="p-4">

@@ -24,25 +24,25 @@ export default function SmallCards({ orders }) {
   const deliveredOrdersCount = getOrdersCountByStatus(status.delivering);
   const orderStatus = [
     {
-      title: "Total Order",
+      title: "Orden total",
       number: ordersCount,
       iconBg: "bg-green-600",
       icon: ShoppingCart,
     },
     {
-      title: "Orders Pending",
+      title: "Órdenes Pendientes",
       number: pendingOrdersCount,
       iconBg: "bg-blue-600",
       icon: Loader2,
     },
     {
-      title: "Order Processing",
+      title: "Ordenes en Proceso",
       number: processingOrdersCount,
       iconBg: "bg-orange-600",
       icon: RefreshCcw,
     },
     {
-      title: "Orders Delivered",
+      title: "Ordenes Entregadas",
       number: deliveredOrdersCount,
       iconBg: "bg-purple-600",
       icon: CheckCheck,
